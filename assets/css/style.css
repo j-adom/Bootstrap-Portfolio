@@ -19,6 +19,10 @@ body {
   clear: both;
 }
 
+header {
+  margin-top: 25px;
+}
+
 h1,
 h2,
 h3,
@@ -53,10 +57,12 @@ h3 {
 /* header */
 
 #masthead {
+
   position: fixed;
   z-index: 99;
   width: 100%;
-  margin: 0 0 30px;
+  max-width: 960px;
+  margin: 1 0 30px;
   overflow: auto;
   color: #ffffff;
   background: #ffffff;
@@ -66,13 +72,11 @@ h3 {
 #logo {
   float: left;
   width: 250px;
-  height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 90px;
   color: #ffffff;
-  text-align: center;
   text-decoration: none;
   background: #4aaaa5;
 }
@@ -94,6 +98,17 @@ nav a {
 
 nav a:first-child {
   border-left: 0 none;
+}
+
+/*Adjustments to bootstrap classes navbar and navbar-brand to match original */
+.navbar{
+  background-color: #ffffff;
+  padding: 0 0 0 0px;
+  width: 100%;
+}
+
+.navbar-brand{
+  margin-left: 0px;
 }
 
 /* footer */
@@ -120,7 +135,7 @@ h3, h2 {
 /* main */
 
 #main-container {
-  padding-top: 130px;
+  padding-top: 30px;
   min-height: calc(100vh - 70px);
 }
 
