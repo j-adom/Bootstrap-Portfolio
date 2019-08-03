@@ -139,6 +139,16 @@ h3, h2 {
   min-height: calc(100vh - 70px);
 }
 
+/*Remove borders when screen size is xs*/
+@media screen and (min-width: 575.98px) {
+  .container {
+      padding-right: 0px;
+      padding-left: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      
+  }
+}
 .main-section {
   float: left;
   width: 100%;
